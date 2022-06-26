@@ -39,8 +39,8 @@ public class Contacts  {
          String name = s.nextLine();
          int position = ContactName.indexOf(name);
          if(position>=0){
-         ContactName.remove(position-1);
-         PhoneNumber.remove(position-1);
+         ContactName.remove(position);
+         PhoneNumber.remove(position);
          System.out.println("Successfully Contact is Removed");}
          else System.out.println("contact Not found");
       }
