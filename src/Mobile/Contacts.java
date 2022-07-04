@@ -9,7 +9,7 @@ public class Contacts  {
     ArrayList<Long> PhoneNumber = new ArrayList<>();
 
      public  void addContact(){
-         System.out.print("Enter Name: ");
+         System.out.print("Enter com.company.Name: ");
          Scanner s = new Scanner(System.in);
          String cname = s.nextLine();
          System.out.print("Enter Phone Number: ");
@@ -24,7 +24,7 @@ public class Contacts  {
          Scanner sc = new Scanner(System.in);
          int position = sc.nextInt();
          sc.nextLine();
-         System.out.print("Enter Contact Name: ");
+         System.out.print("Enter Contact com.company.Name: ");
          String Value = sc.nextLine();
          System.out.print("Enter Phone Number: ");
          long pno = sc.nextLong();
