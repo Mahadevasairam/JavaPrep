@@ -5,18 +5,14 @@ import java.util.Scanner;
 public class pattern1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number of Rows:");
+        System.out.print("Enter number of Rows: ");
         int n = sc.nextInt();
-        int i = 1;
-
-        while(i<=n){
-
-            for(int j =0;j<n;j++){
+        for (int row = 0; row < n; row++)
+        {
+            for(int star = 0;star < n;star++){
                 System.out.print("* ");
             }
             System.out.println();
-            i++;
-
         }
     }
 }
