@@ -7,10 +7,8 @@ public class pattern2 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of Rows:");
         int n = sc.nextInt();
-        for (int row = 0; row < n; row++)
-        {
-            for (int star = 0; star <= row; star++)
-            {
+        for (int row = 0; row < n; row++) {
+            for (int star = 0; star <= row; star++) {
                 System.out.print("* ");
             }
             System.out.println();
