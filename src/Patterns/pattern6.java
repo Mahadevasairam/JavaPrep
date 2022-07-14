@@ -8,21 +8,16 @@ public class pattern6 {
             Scanner sc =new Scanner(System.in);
             System.out.print("Enter number of Rows:");
             int n = sc.nextInt();
-            int row = 1;
-            int i = 1;
-            int j = n;
-            while(row<=n){
-                for(int space = 0;space<4*i;space++){
-                    System.out.print(" ");
+            for (int row = 0; row < n; row++) {
+                //print spaces block
+                for (int spaces = 0; spaces < row; spaces++) {
+                    System.out.print("    "); //4 spaces
                 }
-                i++;
-                for(int star =0;star<j;star++){
+                //print star block
+                for (int stars = 0; stars < n-row; stars++) {
                     System.out.print("* ");
                 }
-                j--;
-                row++;
                 System.out.println();
             }
-
     }
 }

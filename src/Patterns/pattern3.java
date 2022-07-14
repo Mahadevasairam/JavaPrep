@@ -5,15 +5,13 @@ import java.util.Scanner;
 public class pattern3 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
-        System.out.print("Enter number of Rows:");
+        System.out.print("Enter number of Rows: ");
         int n = sc.nextInt();
-        int i = n;
-        while(i>=1){
-            for(int j =0;j<i;j++){
+        for (int row = 0; row < n; row++) {
+            for(int star =0; star<n-row; star++){
                 System.out.print("* ");
             }
             System.out.println();
-            i--;
         }
     }
 }
