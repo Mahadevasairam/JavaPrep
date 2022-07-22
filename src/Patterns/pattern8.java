@@ -7,20 +7,16 @@ public class pattern8 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the no. of rows: ");
         int n = sc.nextInt();
-        int row = 0;
-        int j = n;
-        int  i = 1;
-        while(row<n){
-            for(int space1 = 0;space1<=(2*j-2);space1++) {
-                System.out.print(" ");
+        for (int row = 1; row <= n; row++) {
+            //print space block
+            for (int spaces = 0; spaces < n-row; spaces++) {
+                System.out.print("  ");//2 spaces
             }
-            for(int star = 0;star<(2*i-1);star++){
+            //print star block
+            for (int stars = 0; stars < 2*row-1 ; stars++) {
                 System.out.print("* ");
             }
             System.out.println();
-            row++;
-            i++;
-            j--;
         }
     }
 }
