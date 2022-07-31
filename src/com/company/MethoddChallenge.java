@@ -23,7 +23,7 @@ public class MethoddChallenge {
 
     public static void printData(String studentName,char studentGrade){
 
-        System.out.println("com.company.Student com.company.Name = "+studentName+" and com.company.Student Grade = "+studentGrade);
+        System.out.println("Student Name = "+studentName+" and Student Grade = "+studentGrade);
 
 
     }
