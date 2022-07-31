@@ -2,7 +2,7 @@ package McDonalds;
 
 public class GenarateBill {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         int vegBurgerCost = 4 * 45;
 
