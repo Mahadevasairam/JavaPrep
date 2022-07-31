@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void printInstuct(){
-        System.out.println("0 - To print Instructions");
+        System.out.println("0- To print Instructions");
         System.out.println("1- To add a Contact");
         System.out.println("2- To update a Contact");
         System.out.println("3- To remove a Contact");

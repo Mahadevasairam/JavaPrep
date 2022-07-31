@@ -6,17 +6,17 @@ import java.util.Scanner;
 
 public class Contacts  {
      ArrayList<String> ContactName = new ArrayList<>();
-    ArrayList<Long> PhoneNumber = new ArrayList<>();
+     ArrayList<Long> PhoneNumber = new ArrayList<>();
 
      public  void addContact(){
-         System.out.print("Enter com.company.Name: ");
+         System.out.print("Enter Name: ");
          Scanner s = new Scanner(System.in);
          String cname = s.nextLine();
          System.out.print("Enter Phone Number: ");
          long pno = s.nextLong() ;
          ContactName.add(cname);
          PhoneNumber.add(pno);
-         System.out.println("new Contact is Added");
+         System.out.println("New Contact is Added");
      }
 
      public void updateContact(){
@@ -24,7 +24,7 @@ public class Contacts  {
          Scanner sc = new Scanner(System.in);
          int position = sc.nextInt();
          sc.nextLine();
-         System.out.print("Enter Contact com.company.Name: ");
+         System.out.print("Enter Contact Name: ");
          String Value = sc.nextLine();
          System.out.print("Enter Phone Number: ");
          long pno = sc.nextLong();
@@ -34,7 +34,7 @@ public class Contacts  {
      }
 
       public  void removeContact(){
-         System.out.print("Enter the Contact name to remove: ");
+         System.out.print("Enter a Contact name to remove: ");
          Scanner s = new Scanner(System.in);
          String name = s.nextLine();
          int position = ContactName.indexOf(name);
