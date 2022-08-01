@@ -3,7 +3,7 @@ package com.company;
 public class SecondAndMinutesChallenge {
     public static void main(String[] args) {
         String duration = getDurationString(75,30);
-        String duration1 = getDurationString(70);
+        String duration1 = getDurationString(6023);
         System.out.println(duration);
         System.out.println(duration1);
     }
@@ -22,6 +22,6 @@ public class SecondAndMinutesChallenge {
         }
         int minutes = seconds / 60;
         int remainingSeconds = seconds % 60;
-        return minutes+"m"+remainingSeconds+"s";
+        return getDurationString(minutes,remainingSeconds);
     }
 }
