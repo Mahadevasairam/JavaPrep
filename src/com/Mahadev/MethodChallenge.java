@@ -1,13 +1,13 @@
 package com.Mahadev;
 
-public class MethoddChallenge {
+public class MethodChallenge {
 
 
     public static char CalculateGrade(int Marks){
         char Grade;
         if (Marks > 90)
             Grade = 'S';
-        else if (Marks > 80 && Marks<=90)
+        else if (Marks > 80 && Marks<90)
             Grade = 'A';
         else if (Marks > 70 && Marks<=80)
             Grade = 'B';

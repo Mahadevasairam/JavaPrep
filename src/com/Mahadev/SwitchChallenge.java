@@ -7,13 +7,9 @@ public class SwitchChallenge {
         Scanner sc = new Scanner(System.in);
         char c = sc.next().charAt(0);
 
-        switch(Character.toLowerCase(c)){
-            case 'a': case 'e': case 'i': case'o': case'u':
-                System.out.println(c+" is a Vowel");
-                break;
-            default:
-                System.out.println(c+" is a constant");
-
+        switch (Character.toLowerCase(c)) {
+            case 'a', 'e', 'i', 'o', 'u' -> System.out.println(c + " is a Vowel");
+            default -> System.out.println(c + " is a constant");
         }
     }
 }
