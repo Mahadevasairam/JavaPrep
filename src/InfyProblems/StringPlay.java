@@ -1,8 +1,9 @@
 package InfyProblems;
 
 
+import static InfyProblems.Definations.StringMethods.*;
+
 class Definations {
-    private static Definations.StringMethods StringMethods;
 
     static class StringPlay{
         String unique;
@@ -13,7 +14,7 @@ class Definations {
         }
     }
     public static class StringMethods{
-         public String getUnique(StringPlay sp,String str){
+         public static String getUnique(StringPlay sp,String str){
              String s = str.replaceAll(" ","");
              char[] ch = s.toCharArray();
              StringBuilder sb = new StringBuilder();
@@ -26,7 +27,7 @@ class Definations {
              }
              return sb.toString();
          }
-         public String getDuplicate(StringPlay sp,String str){
+         public static String getDuplicate(StringPlay sp,String str){
              String s = str.replaceAll(" ","");
              char[] ch = s.toCharArray();
              StringBuilder sb = new StringBuilder();
@@ -40,7 +41,7 @@ class Definations {
 
              return sb.toString();
          }
-         public String getVowel(StringPlay sp,String str){
+         public static String getVowel(StringPlay sp,String str){
              StringBuilder sb = new StringBuilder();
              String s = str.replaceAll(" ","");
              char[] ch = s.toCharArray();
@@ -60,13 +61,12 @@ class Definations {
      }
 
     public static void main(String[] args) {
-        StringMethods sm = Definations.StringMethods;
         String str = "Hello this is mahadev";
-        String result = sm.getUnique(new StringPlay(),str);
+        String result = getUnique(new StringPlay(),str);
         System.out.println(result);
-        result = sm.getDuplicate(new StringPlay(),str);
+        result = getDuplicate(new StringPlay(),str);
         System.out.println(result);
-        result = sm.getVowel(new StringPlay(),str);
+        result = getVowel(new StringPlay(),str);
         System.out.println(result);
 
     }
