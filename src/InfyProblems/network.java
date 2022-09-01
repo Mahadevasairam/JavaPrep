@@ -13,13 +13,11 @@ public class network {
                 i++;
                 min++;
             }
-            System.out.println("sum:"+sum);
             if(sum>speed) {
                 count++;
                 sum=0;
                 min = 0;
             }
-            System.out.println("count:"+count);
         }
         return count;
     }
